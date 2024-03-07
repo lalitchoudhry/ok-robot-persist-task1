@@ -12,7 +12,7 @@ const About = () => {
     <section id="about" className="p-10 bg-about flex">
       <div className="">
         <h3 className="text-3xl font-bold text-white">About OK-Robot</h3>
-        <p className={!isMobileScreen ? "font-semibold text-sm py-6 text-white line-clamp-5 sm:line-clamp-none" : "font-semibold text-sm py-6 text-white line-clamp-none"}>
+        <p className={!isMobileScreen ? "w-4/5 leading-6 font-semibold text-sm py-6 text-white line-clamp-5 sm:line-clamp-none" : "leading-6 font-semibold text-sm py-6 text-white line-clamp-none"}>
           Remarkable progress has been made in recent years in the fields of
           vision, language, and robotics. We now have vision models capable of
           recognizing objects based on language queries, navigation systems that
@@ -37,7 +37,7 @@ const About = () => {
           <span className="block sm:hidden underline cursor-pointer mt-2" onClick={()=>setIsMobileScreen(!isMobileScreen)}>{!isMobileScreen ? "see more..." : "see less..."}</span>
         </p>
       </div>
-      <img className="w-1/3 hidden sm:block" src={robotIcon} alt="img" />
+      <img className="w-1/4 hidden sm:block" src={robotIcon} alt="img" />
     </section>
   );
 };

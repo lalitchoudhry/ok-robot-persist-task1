@@ -3,7 +3,7 @@ import React from "react";
 const Videos = () => {
   return (
     <section id="videos" className="flex flex-col-reverse sm:flex-row justify-between items-center p-5 bg-[#EFECEC]">
-      <div className="w-full">
+      <div className="w-full lg:w-3/5">
         <div>here filter</div>
         <figure className="">
           <iframe
