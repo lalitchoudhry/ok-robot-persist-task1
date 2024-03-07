@@ -6,7 +6,7 @@ export default {
       sm: "480px",
       md: "768px",
       lg: "976px",
-      xl: "1440px",
+      xl: "1540px",
     },
     colors: {
       white: "#fff",
@@ -20,7 +20,7 @@ export default {
       "gray-light": "#d3dce6",
       dark: "#070F2B",
       discord: "#124076",
-      about: "#0F0F0F"
+      main: "#51829B"
     },
     extend: {
       spacing: {

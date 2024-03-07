@@ -2,16 +2,16 @@
 import React, { useState } from "react";
 
 // ASSETS IMPORTS
-import robotIcon from "../assets/icons/robot.png";
+import robotIcon from "../assets/icons/robot1.png";
 
 const About = () => {
     // STATES AND VARIABLE
     const [isMobileScreen, setIsMobileScreen] = useState(false);
 
   return (
-    <section id="about" className="p-10 bg-about flex">
+    <section id="about" className="xl:max-w-screen-xl w-full p-10 bg-main flex">
       <div className="">
-        <h3 className="text-3xl font-bold text-white">About OK-Robot</h3>
+        <h3 className="text-3xl font-bold text-white">About Open Droids</h3>
         <p className={!isMobileScreen ? "w-4/5 leading-6 font-semibold text-sm py-6 text-white line-clamp-5 sm:line-clamp-none" : "leading-6 font-semibold text-sm py-6 text-white line-clamp-none"}>
           Remarkable progress has been made in recent years in the fields of
           vision, language, and robotics. We now have vision models capable of

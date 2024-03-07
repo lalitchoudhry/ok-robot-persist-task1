@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 // STYLE IMPORTS
-import bannerImg from "../assets/images/squiggle.png";
+import bannerImg from "../assets/images/squiggle3.png";
 
 // ASSETS IMPORTS
 import bannerVideo1 from "../assets/videos/header_video_ultra_ultra_compressed.mp4";
@@ -18,14 +18,14 @@ import VideosSection from "../components/VideosSection";
 const Home = () => {
   return (
     <>
-      <div className="p-5 flex flex-col sm:flex-row justify-between items-center bg-homeGradient">
+      <div className="xl:max-w-screen-xl w-full p-5 flex flex-col sm:flex-row justify-between items-center">
         <div className="mx-2 relative flex justify-center items-center w-4/5 sm:w-1/2">
-          <img className="w-50" src={bannerImg} alt="img" />
+          <img className="w-" src={bannerImg} alt="img" />
           <div className="absolute text-center">
-            <h1 className="font-black text-4xl lg:text-6xl m-5 text-white">
-              OK-Robot
+            <h1 className="font-black text-4xl lg:text-6xl m-5">
+              Open Droids
             </h1>
-            <p className="font-semibold text-md lg:text-xl text-white">
+            <p className="font-semibold text-md lg:text-xl">
               An open, modular framework for zero-shot, language conditioned
               pick-and-drop tasks in arbitrary homes.
             </p>

@@ -5,17 +5,17 @@ const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <header className="flex justify-between p-2 items-center">
-      <span className="font-black text-2xl py-2 px-4 shadow-md cursor-pointer rounded-full text-center">
-        OK-Robot
+    <header className="xl:max-w-screen-xl w-full flex justify-between p-2 items-center">
+      <span className="font-black text-2xl py-2 px-4 shadow-md cursor-pointer rounded-full text-center bg-main text-white">
+        Open Droids
       </span>
       <nav className="hidden lg:flex justify-between items-center">
         <ul className="flex items-center">
-          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md rounded-full" href="#videos">Videos</a></li>
-          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md rounded-full" href="#">Analysis</a></li>
-          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md rounded-full" href="#">Paper</a></li>
-          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md rounded-full" href="#">Code</a></li>
-          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md rounded-full" href="#">Contact Us</a></li>
+          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md hover:bg-main hover:text-white rounded-full" href="#videos">Videos</a></li>
+          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md hover:bg-main hover:text-white rounded-full" href="#">Analysis</a></li>
+          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md hover:bg-main hover:text-white rounded-full" href="#">Paper</a></li>
+          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md hover:bg-main hover:text-white rounded-full" href="#">Code</a></li>
+          <li><a className="px-4 mx-1 py-1 font-bold hover:shadow-md hover:bg-main hover:text-white rounded-full" href="#">Contact Us</a></li>
         </ul>
       </nav>
       <div 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Videos = () => {
   return (
-    <section id="videos" className="flex flex-col-reverse sm:flex-row justify-between items-center p-10 bg-[#EFECEC]">
+    <section id="videos" className="xl:max-w-screen-xl w-full flex flex-col-reverse sm:flex-row justify-between items-center p-10 bg-[#EFECEC]">
       <div className="w-full lg:w-3/5">
         <div>here filter</div>
         <figure >
