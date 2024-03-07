@@ -1,3 +1,4 @@
+import React from "react";
 
 // PAGES IMPORTS
 import Navbar from "./components/Navbar"
