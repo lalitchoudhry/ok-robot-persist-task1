@@ -2,10 +2,10 @@ import React from "react";
 
 const Videos = () => {
   return (
-    <section id="videos" className="flex flex-col-reverse sm:flex-row justify-between items-center p-5 bg-[#EFECEC]">
+    <section id="videos" className="flex flex-col-reverse sm:flex-row justify-between items-center p-10 bg-[#EFECEC]">
       <div className="w-full lg:w-3/5">
         <div>here filter</div>
-        <figure className="">
+        <figure >
           <iframe
             src="https://www.youtube.com/embed/-A2vuqFizZQ?autoplay=1&fs=0&modestbranding=1&playsinline=1&rel=0&color=white"
             showinfo="0"

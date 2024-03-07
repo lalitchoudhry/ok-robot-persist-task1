@@ -32,7 +32,7 @@ const Home = () => {
           </div>
         </div>
         <Carousel
-          className="mx-2 w-4/5 sm:w-1/2 rounded shadow-2xl"
+          className="w-4/5 sm:w-1/2 rounded shadow-2xl"
           showThumbs={false}
         >
           <figure>
