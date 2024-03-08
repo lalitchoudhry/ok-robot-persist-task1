@@ -2,8 +2,8 @@ import React from "react";
 
 const Videos = () => {
   return (
-    <section id="videos" className="xl:max-w-screen-xl w-full flex flex-col-reverse sm:flex-row justify-between items-center p-10 bg-[#EFECEC]">
-      <div className="w-full lg:w-3/5">
+    <section id="videos" className="xl:max-w-screen-xl w-full flex flex-col-reverse md:flex-row justify-between items-center p-10  bg-main">
+      <div className="w-full lg:w-4/5">
         <div>here filter</div>
         <figure >
           <iframe
@@ -11,13 +11,13 @@ const Videos = () => {
             showinfo="0"
             allowFullScreen=""
             className="w-full rounded-lg shadow-lg"
-            height="367"
+            height="367px"
           ></iframe>
         </figure>
       </div>
       <div className="p-5 m-1 sm:m-5 text-center rounded flex flex-col h-full">
-        <h3 className="text-3xl font-bold ">See "OK-Robot" in Action</h3>
-        <p className="my-5 ">
+        <h3 className="text-3xl font-bold text-white">See "OK-Robot" in Action</h3>
+        <p className="m-5 text-white ">
           In 10 home environments of New York City, OK-Robot attempted 171
           pick-and-drop tasks. Here are sample trials from 5 homes, each showing
           5 tasks.
