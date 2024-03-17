@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useRef} from "react";
+import { useIsVisible } from "../utils/useIsVisible";
 
 //  ASSETS IMPORTS
 import paperImg from "../assets/images/paper3.png";
@@ -7,29 +8,33 @@ import paperImg from "../assets/images/paper3.png";
 import PrimaryBtn from "../components/PrimaryBtn";
 
 const Paper = () => {
+  // STATES AND VARIABLES
+  const ref1 = useRef(null);
+  const isVisible1 = useIsVisible(ref1);
+
   return (
-    <section id="paper" className="p-10 md:p-20 flex justify-between md:flex-row flex-col text-white">
+    <section  id="paper" className={`transition-opacity ease-in-out duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"} p-10 md:p-20 flex justify-between flex-col `}>
       <div className="flex my-2">
-        <img className="w-1/4 shadow-brand shadow-3xl" src={paperImg} alt="img" />
-        <div className="mx-5">
-          <h3 className="mb-5 text-2xl md:text-4xl font-bold">Paper</h3>
-          <p className="text-xs md:text-md font-semibold">
-            <span className="text-brand text-lg">Open Droids </span>: What Really Matters in Integrating Open-Knowledge Models for Robotics
+        <img ref={ref1} className="w-1/4 min-w-28 " src={paperImg} alt="img" />
+        <div className="mx- text-center">
+          <h3  className="mb-5 text-lg md:text-2xl decoration-brand underline">Paper</h3>
+          <p className="text-md font-semibold">
+            <span className="text-brand text-2xl">Open Droids </span>: What Really Matters in Integrating Open-Knowledge Models for Robotics
           </p>
         </div>
       </div>
-      <div className="flex flex-col justify-between item-center p-5 m-2 shadow-brand shadow-inner">
+      <div className="flex md:flex-row flex-col justify-between item-center p-5 m-2 child:my-2">
         <PrimaryBtn
           title="Read the Paper (Arxiv)"
-          handleClick="https://arxiv.org/abs/2401.12202"
+          href="https://arxiv.org/abs/2401.12202"
         />
         <PrimaryBtn
           title="Read the Paper (PDF)"
-          handleClick="https://ok-robot.github.io/mfiles/paper/ok_robot.pdf"
+          href="https://ok-robot.github.io/mfiles/paper/ok_robot.pdf"
         />
         <PrimaryBtn
           title="Citation (bibtex)"
-          handleClick="https://ok-robot.github.io/more/bibtex.txt"
+          href="https://ok-robot.github.io/more/bibtex.txt"
         />
       </div>
     </section>

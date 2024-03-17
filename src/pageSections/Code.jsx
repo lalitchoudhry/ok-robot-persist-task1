@@ -2,13 +2,13 @@ import React from "react";
 
 const Code = () => {
   return (
-    <section className="bg-space text-white p-10 md:p-20 flex md:flex-row flex-col justify-between md:items-center">
+    <section id="code" className="bg-space p-10 md:p-20 flex md:flex-row flex-col justify-between md:items-center">
       <div>
-        <h2 className="font-black text-4xl  cursor-pointer  text-white underline decoration-brand decoration-4">
+        <h2 className="font-bold text-4xl text-brand  cursor-pointer underline decoration-brand decoration-4">
           Open Droids
         </h2>
         <p>Get the code on github.</p>
-        <ul className="my-5 flex flex-col text-sm text-gray child:my-2">
+        <ul className="my-5 flex flex-col text-sm child:my-2">
           <li>
             <i className="bi bi-github"></i>
             <a
@@ -39,8 +39,8 @@ const Code = () => {
         </ul>
       </div>
       <div>
-        <h2 className="font-bold text-xl  cursor-pointer  text-white">Connect</h2>
-        <ul className="my-5 flex flex-col text-sm text-gray child:my-2">
+        <h2 className="font-bold text-xl  cursor-pointer ">Connect with us</h2>
+        <ul className="my-5 flex flex-col text-sm child:my-2">
           <li>
             <i className="bi bi-twitter-x"></i>
             <a className="m-2 hover:underline" href="#">Twitter</a>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-center p-10 text-xs text-gray">
+    <footer className="text-center p-10 text-xs">
       <span className="font-bold text-brand">Open Droids </span> by{" "}
       <a className="underline" href="https://mahis.life">Mahi Shafiullah</a>. The source code is
       licensed <a className="underline" href="http://opensource.org/licenses/mit-license.php">MIT</a>.

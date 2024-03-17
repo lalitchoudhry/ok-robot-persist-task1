@@ -16,9 +16,10 @@ export default {
       "gray-light": "#d3dce6",
       dark: "#070F2B",
       discord: "#124076",
-      space: "#080808",
-      hover: "#1b1933",
-      brand: "#c32034"
+      space: "#EEF5FF",
+      brand: "#176B87",
+      hover: "#86B6F6",
+      main: "#B4D4FF"
     },
     extend: {
       spacing: {
@@ -29,10 +30,10 @@ export default {
         "4xl": "2rem",
       },
       backgroundImage: {
-        homeGradient: "linear-gradient(to right bottom, #9290c3, #c590c2, #ee91ae, #ff9e8f, #ffb673, #fcad6a, #f9a561, #f69c59, #d67065, #a45269, #693d5d, #332941);"
+        homeGradient: "linear-gradient(to left bottom, #b4d4ff, #bfdaff, #cae0ff, #d5e7ff, #e0edff, #dceafe, #d9e8fe, #d5e5fd, #c2d9fb, #afcdfa, #9bc2f8, #86b6f6);"
       },
       boxShadow: {
-        '3xl': '0 0 60px -20px #c32034',
+        '3xl': '0 0 60px -30px #517af9',
       }
     },
   },
