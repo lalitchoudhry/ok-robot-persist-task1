@@ -67,7 +67,7 @@ const Videos = () => {
         </p>
       </div>
       <div className={`w-full lg:w-3/5 transition-opacity ease-in-out duration-700 ${isVisible2 ? "opacity-100" : "opacity-0"}`}>
-        <div className="flex justify-between my-5 flex-col md:flex-row">
+        <div className="flex justify-between my-5 flex-col md:flex-row child:my-2">
           <Dropdown {...FILTER_TYPE.home} updateFilter={updateFilter} title={videoFilter.type.label}/>
           <Dropdown {...FILTER_TYPE.timeStamp} updateFilter={updateFilter} title={videoFilter.timeStamp.label} />
           <PrimaryBtn title="Shuffle" handleClick={shuffleVideoFilter}/>
@@ -77,8 +77,7 @@ const Videos = () => {
             src={`https://www.youtube.com/embed/${videoFilter.type.value}?autoplay=1&fs=0&modestbranding=1&playsinline=1&rel=0&color=white&start=${videoFilter.timeStamp.value}`}
             showinfo="0"
             allowFullScreen=""
-            className="w-full rounded-lg"
-            height="367px"
+            className="w-full h-52 sm:h-96 rounded-lg"
           ></iframe>
         </figure>
       </div>

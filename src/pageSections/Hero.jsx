@@ -1,13 +1,17 @@
 import React, { useRef } from "react";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
+// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// import { Carousel } from "react-responsive-carousel";
 
 import { useIsVisible } from "../utils/useIsVisible";
 
 // ASSETS IMPORTS
 import bannerVideo1 from "../assets/videos/header_video_ultra_ultra_compressed.mp4";
 import bannerVideo2 from "../assets/videos/mosaic_extended.mp4";
+import heroBanner from "../assets/images/robot-7-bg.png";
+
 import PrimaryBtn from "../components/PrimaryBtn";
 
 const Hero = () => {
@@ -17,52 +21,28 @@ const Hero = () => {
 
   return (
     <div
+      ref={ref1}
       className={`transition-opacity ease-in-out duration-700 ${
         isVisible1 ? "opacity-100" : "opacity-0"
-      } p-3 flex flex-col justify-between items-center bg-homeGradient`}
+      } p-3 flex justify-evenly items-center bg-homeGradient flex-col md:flex-row h-screen`}
     >
-      <h1 className="font-bold text-4xl lg:text-6xl m-5 text-brand">
-        Open Droids
-      </h1>
-      <p className="p-3 text-sm text-center max-w-lg">
-        An open, modular framework for zero-shot, language conditioned
-        pick-and-drop tasks in arbitrary homes.
-      </p>
-      <Carousel
-        className={`transition-opacity ease-in duration-700 ${
-          isVisible1 ? "opacity-100" : "opacity-0"
-        } m-5 w-11/12 md:w-3/5 rounded-xl shadow-3xl shadow-brand`}
-        showThumbs={false}
-        interval={5000}
-        emulateTouch
-        autoPlay
-        infiniteLoop
-      >
-        <figure>
-          <video
-            className="rounded-lg shadow-xl"
-            muted
-            autoPlay
-            playsInline
-            loop
-            src={bannerVideo1}
-          ></video>
-        </figure>
-        <figure>
-          <video
-            ref={ref1}
-            className="rounded-lg shadow-lg"
-            muted
-            autoPlay
-            playsInline
-            loop
-            src={bannerVideo2}
-          ></video>
-        </figure>
-      </Carousel>
-      
-      <div className="my-5">
-        <PrimaryBtn title="Learn More" href="#About" />
+      <div className="text-center">
+        <h1 className="font-bold text-4xl lg:text-7xl m-5 text-brand underline decoration-hover">
+          Open Droids
+        </h1>
+        <p className="p-3 text-md text-center max-w-lg font-semibold ">
+          An open, modular framework for zero-shot, language conditioned
+          pick-and-drop tasks in arbitrary homes.
+        </p>
+      </div>
+      <div className="">
+        <ParallaxLayer
+          offset={0}
+          speed={-.5}
+          style={{ position: "static", width: "100%", height: "100%" }}
+        >
+          <img className="" src={heroBanner} alt="img" />
+        </ParallaxLayer>
       </div>
     </div>
   );

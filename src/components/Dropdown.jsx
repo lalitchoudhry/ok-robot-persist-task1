@@ -18,7 +18,7 @@ function Dropdown({label, item, updateFilter, title}) {
         <p>{title}</p>
         <i className="bi bi-caret-down ml-2"></i>
       </div>
-      <ul className={`${showDropdown ? "flex" : "hidden"} absolute flex-col bg-white w-full`}>
+      <ul className={`${showDropdown ? "flex" : "hidden"} absolute flex-col bg-white w-full z-10`}>
         {(item).map((item) => <div
           key={item.key}
           className=" p-2 text-sm cursor-pointer hover:bg-hover"

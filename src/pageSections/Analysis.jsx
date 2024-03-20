@@ -11,12 +11,12 @@ const Analysis = () => {
 
   return (
     <section id="analysis" className={`transition-opacity ease-in-out duration-700 p-10 md:p-20 flex flex-col justify-between text-center bg-white`}>
-      <div className="h-full flex flex-col justify-between">
+      <div className="h-full md:mx-10 mx-0 flex flex-col justify-between">
         <h3 className="m-2 text-xl decoration-brand underline">Analysis</h3>
-        <p className="mb-5 m-2 font-semibold text-3xl text-brand">
+        <p className="mb-5 m-2 font-semibold md:text-3xl text-lg text-brand">
           Understanding the performance of Open Droids
         </p>
-        <p className="m-2 text-sm font-medium">
+        <p className="m-2 text-md font-medium text-justify">
           While our method can show zero-shot generalization in completely new
           environments, we probe OK-Robot to better understand when and how it
           succeeds and fails. While we find a 58.5% success rate at completely
@@ -27,7 +27,7 @@ const Analysis = () => {
           difficult pose from the manipulation module (8.0%), and hardware
           difficulties (7.5%).
         </p>
-        <p className="m-2 text-sm font-medium">
+        <p className="m-2 text-md font-medium text-justify">
           In the "Understanding the performance of OK-Robot" section of the
           paper, we go over the analysis of the failure modes presented in the
           figure above and discuss the most frequent cases.

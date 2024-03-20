@@ -20,7 +20,7 @@ const About = () => {
     <section id="about" className={`transition-opacity ease-in-out duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"} p-10 md:p-20 flex flex-col text-center bg-main`}>
       <div className=" md:mx-10 mx-0 mb-10 md:mb-0">
         <h3 className="text-3xl decoration-brand underline ">About<span className="text-white"> Open Droids</span></h3>
-        <p ref={ref1} className={!isMobileScreen ? "leading-6 text-md py-6  line-clamp-5 md:line-clamp-none text-brand font-medium" : "leading-6 text-md py-6  line-clamp-none text-brand font-medium "}>
+        <p ref={ref1} className={!isMobileScreen ? "leading-6 text-md py-6  line-clamp-5 md:line-clamp-none text-brand font-medium text-justify" : "leading-6 text-md py-6  line-clamp-none text-brand font-medium text-justify"}>
           Remarkable progress has been made in recent years in the fields of
           vision, language, and robotics. We now have vision models capable of
           recognizing objects based on language queries, navigation systems that
