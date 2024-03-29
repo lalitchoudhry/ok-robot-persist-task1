@@ -31,14 +31,13 @@ const Navbar = () => {
       </div>
 
       {/* MOBILE MENU */}
-      { showMobileMenu && <ul className="absolute h-96 flex flex-col top-16 w-full justify-between items-center bg-space text-brand right-0 shadow-md child:w-full child:h-full child:flex child:justify-center child:items-center z-40">
+      <ul className={`absolute h-96 ${showMobileMenu ? "flex" : "hidden"} flex flex-col top-16 w-full justify-between items-center bg-white text-brand right-0 shadow-md child:w-full child:h-full child:flex child:justify-center child:items-center z-40 transition-all ease-in-out duration-700`}>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#videos">Videos</a>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#analysis">Analysis</a>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#paper">Paper</a>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#code">Code</a>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="https://docs.dobb-e.com/contact-us">Contact Us</a>
       </ul>
-      }
     </header>
   );
 };

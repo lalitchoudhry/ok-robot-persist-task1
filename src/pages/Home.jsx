@@ -31,9 +31,9 @@ const Home = () => {
   }, [])
 
   return (
-    <div className="xl:max-w-screen-xl w-full bg-space">
+    <div className="xl:max-w-screen-xl w-full">
       <AskQBtn />
-      <Parallax ref={parallax} style={{maxWidth: "1540px"}}>
+      {/* <Parallax ref={parallax} style={{maxWidth: "1540px"}}> */}
         <Hero />
         <Video />
         <About />
@@ -41,7 +41,7 @@ const Home = () => {
         <Paper />
         <Code />
         <Footer />
-      </Parallax>
+      {/* </Parallax> */}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const Code = () => {
   return (
-    <section id="code" className="bg-space p-10 md:p-20 flex md:flex-row flex-col justify-between md:items-center">
+    <section id="code" className="p-10 md:p-20 flex md:flex-row flex-col justify-between md:items-center">
       <div>
         <h2 className="font-bold text-4xl text-brand  cursor-pointer underline decoration-brand decoration-4">
           Open Droids

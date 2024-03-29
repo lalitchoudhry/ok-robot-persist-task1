@@ -5,7 +5,7 @@ export default {
     screens: {
       sm: "500px",
       md: "770px",
-      lg: "976px",
+      lg: "1050px",
       xl: "1540px",
     },
     colors: {
@@ -16,10 +16,11 @@ export default {
       "gray-light": "#d3dce6",
       dark: "#070F2B",
       discord: "#124076",
-      space: "#EEF5FF",
-      brand: "#176B87",
-      hover: "#86B6F6",
-      main: "#B4D4FF"
+      space: "#F6F4EB",
+      // brand: "#008DDA",
+      brand: "#126fff",
+      hover: "#91C8E4",
+      main: "#749BC2"
     },
     extend: {
       spacing: {

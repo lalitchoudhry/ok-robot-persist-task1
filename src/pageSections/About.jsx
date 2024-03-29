@@ -17,10 +17,10 @@ const About = () => {
     const isVisible1 = useIsVisible(ref1);
 
   return (
-    <section id="about" className={`transition-opacity ease-in-out duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"} p-10 md:p-20 flex flex-col text-center bg-main`}>
-      <div className=" md:mx-10 mx-0 mb-10 md:mb-0">
-        <h3 className="text-3xl decoration-brand underline ">About<span className="text-white"> Open Droids</span></h3>
-        <p ref={ref1} className={!isMobileScreen ? "leading-6 text-md py-6  line-clamp-5 md:line-clamp-none text-brand font-medium text-justify" : "leading-6 text-md py-6  line-clamp-none text-brand font-medium text-justify"}>
+    <section id="about" className={`transition-opacity ease-in-out duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"} p-10 md:p-20 mt-20 flex flex-col text-center `}>
+      <div className=" md:mx-5 mx-0 mb-10 md:mb-0">
+        <h3 className="text-left text-2xl lg:text-4xl underline decoration-brand">About <span className="text-brand ">Open Droids</span></h3>
+        <p ref={ref1} className={!isMobileScreen ? "leading-8 text-sm lg:text-lg py-6  line-clamp-5 md:line-clamp-none  text-justify" : "leading-8 text-sm lg:text-lg py-6  line-clamp-none text-justify"}>
           Remarkable progress has been made in recent years in the fields of
           vision, language, and robotics. We now have vision models capable of
           recognizing objects based on language queries, navigation systems that
@@ -42,8 +42,8 @@ const About = () => {
           OK-Robot's performance increases to 82%. However, the most important
           insight gained from OK-Robot is the critical role of nuanced details
           when combining Open Knowledge systems like VLMs with robotic modules. 
-          <span className="block md:hidden underline cursor-pointer mt-2" onClick={()=>setIsMobileScreen(!isMobileScreen)}>{!isMobileScreen ? "see more..." : "see less..."}</span>
         </p>
+        <div className="text-start text-sm block md:hidden underline cursor-pointer mt-2" onClick={()=>setIsMobileScreen(!isMobileScreen)}>{!isMobileScreen ? "see more..." : "see less..."}</div>
       </div>
       {/* <Carousel
         className=" rounded-xl p-8 border-2 border-gray-dark"

@@ -23,7 +23,6 @@ const Videos = () => {
 
   // FUNCTION
   const shuffleVideoFilter = () => {
-    console.log("shuffle filter running");
     const randomHomeNum = Math.floor(Math.random() * 5)
     const randomTimeNum = Math.floor(Math.random() * 6)
     setVideoFilter(
@@ -32,11 +31,9 @@ const Videos = () => {
         timeStamp: FILTER_TYPE.timeStamp.item[randomTimeNum]
       }
     );
-    console.log(videoFilter)
   }
 
   const updateFilter = (value) => {
-    console.log(value)
     if (value.label === "Home") {
       setVideoFilter({type: value.value, timeStamp: videoFilter.timeStamp});
     }
@@ -50,17 +47,13 @@ const Videos = () => {
     shuffleVideoFilter();
   }, [])
 
-  useEffect(()=> {
-    console.log(videoFilter)
-  }, [videoFilter])
-
   return (
-    <section ref={ref1} id="videos" className={` flex flex-col justify-between items-center md:p-20 p-10`}>
-      <div className={`sm:m-5 text-center rounded flex flex-col h-full transition-opacity ease-in-out duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
-        <h3  className="text-3xl decoration-brand underline">
+    <section ref={ref1} id="videos" className={` flex flex-col justify-between items-center p-10 `}>
+      <div className={`text-center md:w-3/5 md:mr-10 justify-between rounded flex flex-col h-full transition-opacity ease-in-out duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
+        <h3  className="text-2xl lg:text-5xl decoration-brand underline">
           See "<span className="text-brand">Open Droids</span>" in Action
         </h3>
-        <p className="m-5 md:px-32 px-0 font-semibold">
+        <p className="my-10 lg:text-xl text-md ">
           In 10 home environments of New York City, OK-Robot attempted 171
           pick-and-drop tasks. Here are sample trials from 5 homes, each showing
           5 tasks.
@@ -72,12 +65,12 @@ const Videos = () => {
           <Dropdown {...FILTER_TYPE.timeStamp} updateFilter={updateFilter} title={videoFilter.timeStamp.label} />
           <PrimaryBtn title="Shuffle" handleClick={shuffleVideoFilter}/>
         </div>
-        <figure ref={ref2} >
+        <figure ref={ref2} className="shadow-2xl" >
           <iframe
             src={`https://www.youtube.com/embed/${videoFilter.type.value}?autoplay=1&fs=0&modestbranding=1&playsinline=1&rel=0&color=white&start=${videoFilter.timeStamp.value}`}
             showinfo="0"
             allowFullScreen=""
-            className="w-full h-52 sm:h-96 rounded-lg"
+            className="w-full h-96 rounded-lg shadow-lg border-white"
           ></iframe>
         </figure>
       </div>
