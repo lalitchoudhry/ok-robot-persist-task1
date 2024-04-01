@@ -32,7 +32,7 @@ const Hero = () => {
       ref={ref1}
       className={`transition-opacity ease-in-out duration-700 ${
         isVisible1 ? "opacity-100" : "opacity-0"
-      } p-10 md:p-20 flex justify-between items-center flex-col md:flex-row bg-white`}
+      } p-5 md:p-20 flex justify-between items-center flex-col md:flex-row bg-white`}
     >
       <div className="text-center md:text-start flex flex-col items-center md:items-start">
           <h1 ref={ref} className="md:w-3/5 lg:w-2/3 font-bold text-4xl lg:text-7xl m-5 text-brand">
@@ -41,11 +41,11 @@ const Hero = () => {
             </span>
             <animated.p  className="bg-hover p-1" style={props} ></animated.p>
           </h1>
-          <p className="m-5 lg:text-2xl text-sm max-w-3xl">
+          <p className="m-5 lg:text-2xl text-base max-w-3xl">
             An open, modular framework for zero-shot, language conditioned
             pick-and-drop tasks in arbitrary homes.
           </p>
-          <div className="m-5"><PrimaryBtn title="Learn more" /></div>
+          <div className="m-5"><PrimaryBtn title="Learn more" href="#about" /></div>
       </div>
       <img className="" src={heroBanner} alt="img" />
       {/* <div className=""> */}

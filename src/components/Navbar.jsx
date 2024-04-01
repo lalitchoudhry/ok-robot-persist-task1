@@ -22,16 +22,16 @@ const Navbar = () => {
         </ul>
       </nav>
       <div 
-        className="flex lg:hidden flex-col justify-between align-center bg-space rounded p-1 shadow-md"
+        className="w-9 h-8 flex lg:hidden flex-col justify-between align-center bg-space rounded p-1 shadow-md"
         onClick={()=>setShowMobileMenu(!showMobileMenu)}
       >
-        <div className="w-6 p-0.5 m-0.5 bg-gray rounded"></div>
-        <div className="w-6 p-0.5 m-0.5 bg-gray rounded"></div>
-        <div className="w-6 p-0.5 m-0.5 bg-gray rounded"></div>
+        <div className={`w-full p-0.5 m-0.5 bg-gray rounded ${showMobileMenu && "origin-top-left rotate-[35deg]"}`}></div>
+        <div className={`w-full p-0.5 m-0.5 bg-gray rounded ${showMobileMenu && "hidden"}`}></div>
+        <div className={`w-full p-0.5 m-0.5 bg-gray rounded ${showMobileMenu && "origin-top-left rotate-[320deg]"}`}></div>
       </div>
 
       {/* MOBILE MENU */}
-      <ul className={`absolute h-96 ${showMobileMenu ? "flex" : "hidden"} flex flex-col top-16 w-full justify-between items-center bg-white text-brand right-0 shadow-md child:w-full child:h-full child:flex child:justify-center child:items-center z-40 transition-all ease-in-out duration-700`}>
+      <ul className={`absolute h-96 ${showMobileMenu ? "visible opacity-100" : " invisible opacity-0"} flex flex-col top-16 w-full justify-between items-center bg-white text-brand right-0 shadow-md child:w-full child:h-full child:flex child:justify-center child:items-center z-40 transition-opacity delay-300 duration-300 ease-in-out`}>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#videos">Videos</a>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#analysis">Analysis</a>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#paper">Paper</a>

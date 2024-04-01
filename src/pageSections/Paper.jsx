@@ -17,7 +17,7 @@ const Paper = () => {
   return (
     <section
       id="paper"
-      className="p-10 md:p-20 flex justify-between items-center flex-col"
+      className="p-5 md:p-20 flex justify-between items-center flex-col"
     >
       <h3 className="mb-5 font-semibold text-xl md:text-2xl decoration-hover underline">
         Paper

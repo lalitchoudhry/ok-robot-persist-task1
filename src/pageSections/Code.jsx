@@ -2,7 +2,7 @@ import React from "react";
 
 const Code = () => {
   return (
-    <section id="code" className="p-10 md:p-20 flex md:flex-row flex-col justify-between md:items-center">
+    <section id="code" className="p-5 md:p-20 flex md:flex-row flex-col justify-between md:items-center">
       <div>
         <h2 className="font-bold text-4xl text-brand  cursor-pointer underline decoration-brand decoration-4">
           Open Droids
@@ -43,19 +43,19 @@ const Code = () => {
         <ul className="my-5 flex flex-col text-sm child:my-2">
           <li>
             <i className="bi bi-twitter-x"></i>
-            <a className="m-2 hover:underline" href="#">Twitter</a>
+            <a className="m-2 hover:underline" href="https://twitter.com/notmahi">Twitter</a>
           </li>
           <li>
             <i className="bi bi-linkedin"></i>
-            <a className="m-2 hover:underline" href="#">LilnkedIn</a>
+            <a className="m-2 hover:underline" href="https://www.linkedin.com/in/nshafiul/">LilnkedIn</a>
           </li>
           <li>
             <i className="bi bi-discord"></i>
-            <a className="m-2 hover:underline" href="#">Discord</a>
+            <a className="m-2 hover:underline" href="https://discord.gg/wzzZJxqKYC">Discord</a>
           </li>
           <li>
             <i className="bi bi-instagram"></i>
-            <a className="m-2 hover:underline" href="#">Instagram</a>
+            <a className="m-2 hover:underline" href="https://www.instagram.com/thesecondsonofman/">Instagram</a>
           </li>
         </ul>
       </div>

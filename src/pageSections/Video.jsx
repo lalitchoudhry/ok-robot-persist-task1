@@ -48,13 +48,13 @@ const Videos = () => {
   }, [])
 
   return (
-    <section ref={ref1} id="videos" className={` flex flex-col justify-between items-center p-10 `}>
+    <section ref={ref1} id="videos" className={` flex flex-col justify-between items-center p-5 `}>
       <div className={`text-center md:w-3/5 md:mr-10 justify-between rounded flex flex-col h-full transition-opacity ease-in-out duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
         <h3  className="text-2xl lg:text-5xl decoration-brand underline">
           See "<span className="text-brand">Open Droids</span>" in Action
         </h3>
         <p className="my-10 lg:text-xl text-md ">
-          In 10 home environments of New York City, OK-Robot attempted 171
+          In 10 home environments of New York City, Open Droids attempted 171
           pick-and-drop tasks. Here are sample trials from 5 homes, each showing
           5 tasks.
         </p>
