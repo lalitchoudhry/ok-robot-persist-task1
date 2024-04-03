@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
 // STYLE IMPORTS
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // ASSETS IMPORTS
 

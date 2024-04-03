@@ -4,7 +4,7 @@ import React, {useEffect, useRef, useState} from "react";
 import { useIsVisible } from "../utils/useIsVisible";
 
 // CONSTANTS
-import { FILTER_TYPE } from "../data/constants";
+import { FILTER_TYPE } from "../constants";
 
 // COMPONENTS
 import Dropdown from "../components/Dropdown";

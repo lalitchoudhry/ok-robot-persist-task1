@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useIsVisible } from "../utils/useIsVisible";
 
 // ASSETS IMPORT
-import analysisImg from "../assets/images/sankey_failure_modes.png";
+import analysisImg from "/assets/images/sankey_failure_modes.png";
 
 const Analysis = () => {
   // STATES AND VARIABLES

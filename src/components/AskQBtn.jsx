@@ -1,7 +1,7 @@
 import React from 'react';
 
 // ASSETS IMPORTS
-import discordIcon from '../assets/icons/discord.png';
+import discordIcon from '/assets/icons/discord.png';
 
 const AskQBtn = () => {
   return (

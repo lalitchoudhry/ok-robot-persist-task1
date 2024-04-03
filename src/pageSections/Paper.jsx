@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useIsVisible } from "../utils/useIsVisible";
 
 //  ASSETS IMPORTS
-import paperImg from "../assets/images/paper3.png";
+import paperImg from "/assets/images/paper3.png";
 
 // COMPONENTS IMPORTS
 import PrimaryBtn from "../components/PrimaryBtn";

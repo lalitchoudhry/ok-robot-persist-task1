@@ -9,7 +9,7 @@ import { useSpring, animated } from '@react-spring/web'
 import { useIsVisible } from "../utils/useIsVisible";
 
 // ASSETS IMPORTS
-import heroBanner from "../assets/images/robot-7-bg.png";
+import heroBanner from "/assets/images/robot-7-bg.png";
 
 import PrimaryBtn from "../components/PrimaryBtn";
 

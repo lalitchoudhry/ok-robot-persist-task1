@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import logo from "../assets/images/robo-logo.jpg"
+import logo from "/assets/images/robo-logo.jpg"
 
 const Navbar = () => {
   // STATES AND VARIABLES

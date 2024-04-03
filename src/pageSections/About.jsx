@@ -1,14 +1,12 @@
 
 import React, { useState, useRef } from "react";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// import { Carousel } from "react-responsive-carousel";
 
 import { useIsVisible } from "../utils/useIsVisible";
 
 // ASSETS IMPORTS
-import bannerVideo1 from "../assets/videos/header_video_ultra_ultra_compressed.mp4";
-import bannerVideo2 from "../assets/videos/mosaic_extended.mp4";
 
 const About = () => {
     // STATES AND VARIABLE
@@ -45,35 +43,6 @@ const About = () => {
         </p>
         <div className="text-start text-sm block md:hidden underline cursor-pointer mt-2" onClick={()=>setIsMobileScreen(!isMobileScreen)}>{!isMobileScreen ? "see more..." : "see less..."}</div>
       </div>
-      {/* <Carousel
-        className=" rounded-xl p-8 border-2 border-gray-dark"
-        showThumbs={false}
-        interval={5000}
-        emulateTouch
-        autoPlay
-        infiniteLoop
-      >
-        <figure>
-          <video
-            className="rounded-lg w-full"
-            muted
-            autoPlay
-            playsInline
-            loop
-            src={bannerVideo1}
-          ></video>
-        </figure>
-        <figure>
-          <video
-            className="rounded-lg w-full"
-            muted
-            autoPlay
-            playsInline
-            loop
-            src={bannerVideo2}
-          ></video>
-        </figure>
-      </Carousel> */}
     </section>
   );
 };
