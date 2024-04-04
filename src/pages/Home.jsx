@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // STYLE IMPORTS
 
@@ -15,24 +15,14 @@ import Code from "../pageSections/Code";
 import Footer from "../components/Footer";
 
 const Home = () => {
-  const parallax = useRef(null);
 
   // FUNCTIONS
-  const getWidth = () => window.innerWidth;
-
-  const [width, setWidth] = useState(getWidth);
 
   // useEffects
-  useEffect(() => {
-    window.addEventListener('resize', getWidth)
-
-    return () => window.removeEventListener('resize', getWidth)
-  }, [])
 
   return (
     <div className="xl:max-w-screen-xl w-full">
       <AskQBtn />
-      {/* <Parallax ref={parallax} style={{maxWidth: "1540px"}}> */}
         <Hero />
         <Video />
         <About />
@@ -40,7 +30,6 @@ const Home = () => {
         <Paper />
         <Code />
         <Footer />
-      {/* </Parallax> */}
     </div>
   );
 };
