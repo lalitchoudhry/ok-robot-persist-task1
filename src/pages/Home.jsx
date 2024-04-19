@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 // ASSETS IMPORTS
 
 // COMPONENTS IMPORTS
+import Navbar from "../components/Navbar";
 import AskQBtn from "../components/AskQBtn";
 import About from "../pageSections/About";
 import Video from "../pageSections/Video";
@@ -23,6 +24,7 @@ const Home = () => {
   return (
     <div className="xl:max-w-screen-xl w-full">
       <AskQBtn />
+      <Navbar />
         <Hero />
         <Video />
         <About />

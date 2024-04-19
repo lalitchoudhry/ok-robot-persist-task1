@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
 import logo from "/assets/images/robo-logo.jpg"
 
@@ -18,7 +19,7 @@ const Navbar = () => {
           <li><a className="px-4 mx-1 py-1 font-bold text-white hover:underline decoration-hover" href="#analysis">Analysis</a></li>
           <li><a className="px-4 mx-1 py-1 font-bold text-white hover:underline decoration-hover" href="#paper">Paper</a></li>
           <li><a className="px-4 mx-1 py-1 font-bold text-white hover:underline decoration-hover" href="#code">Code</a></li>
-          <li><a className="px-4 mx-1 py-1 font-bold text-white hover:underline decoration-hover" href="https://docs.dobb-e.com/contact-us">Contact Us</a></li>
+          <li><Link className="px-4 mx-1 py-1 font-bold text-white hover:underline decoration-hover" to="/contact">Contact Us</Link></li>
         </ul>
       </nav>
       <div 
@@ -36,7 +37,7 @@ const Navbar = () => {
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#analysis">Analysis</a>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#paper">Paper</a>
         <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="#code">Code</a>
-        <a className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" href="https://docs.dobb-e.com/contact-us">Contact Us</a>
+        <Link className="px-4 py-1 font-bold rounded-full hover:underline decoration-hover" to="/contact">Contact Us</Link>
       </ul>
     </header>
   );
